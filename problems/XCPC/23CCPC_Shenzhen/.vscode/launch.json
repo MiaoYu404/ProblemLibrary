@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Default Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/code.o",
+            "args": [],
+            "cwd": "${workspaceFolder}/debug",
+            "preLaunchTask": "编译"
+        },
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "debug",
+            "program": "${workspaceFolder}/debug/code.o",
+            "args": [],
+            "cwd": "${workspaceFolder}/debug",
+            "preLaunchTask": "C/C++: g++ 生成活动文件",
+            "internalConsoleOptions": "openOnSessionStart",
+            "console": "integratedTerminal"
+        }
+    ]
+}
